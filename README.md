@@ -5,7 +5,7 @@ Done as a final project for the UChicago CS 122 class in Winter 2019.
 The writeup of our process and findings can be viewed at our [project website](https://lilianhj.github.io/polling-closures/index.html).
 
 ## Team members:
-* Lilian Huang
+* [Lilian Huang](https://github.com/lilianhj/)
 * Peter Li
 * Kyle Schindl
           
