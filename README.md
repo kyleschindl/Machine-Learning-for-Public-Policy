@@ -48,6 +48,6 @@ The files should be viewed/run in the following order.
 ### Data representation and visualization:
 1. Data visualization with maps:
     * mapping.py
-    * All output maps can be viewed in a single webpage at webpage.html
+    * All output maps can be viewed in a single webpage at our project website
 2. Visualization with line plots and barplots:
     * summary_stats_and_vis.py
