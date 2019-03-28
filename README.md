@@ -8,6 +8,7 @@ Done as a final project for the UChicago CS 122 class in Winter 2019.
 * Kyle Schindl
           
 ## Requirements:
+### In Python:
 * folium (0.2.1)
 * pandas 
 * seaborn
@@ -17,6 +18,9 @@ Done as a final project for the UChicago CS 122 class in Winter 2019.
 * statsmodels
 
 Other than Folium, we used the most up-to-date versions of all libraries.
+### In R:
+* dplyr
+* stargazer
 
 ## Files containing raw data:
 * countypres_2000_2016.csv, which is manually downloaded from [this website](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/VOQCHQ)
@@ -45,6 +49,7 @@ The files should be viewed/run in the following order.
 ### Regressions using merged data:
 
 * statistical_analysis.py
+* regression.R
 
 ### Data representation and visualization:
 1. Data visualization with maps:
