@@ -2,6 +2,8 @@ Project examining geographic and demographic trends in closure of polling locati
 
 Done as a final project for the UChicago CS 122 class in Winter 2019.
 
+The writeup of our process and findings can be viewed at our [project website](https://lilianhj.github.io/polling-closures/index.html).
+
 ## Team members:
 * Lilian Huang
 * Peter Li
@@ -54,6 +56,6 @@ The files should be viewed/run in the following order.
 ### Data representation and visualization:
 1. Data visualization with maps:
     * mapping.py
-    * All output maps can be viewed in a single webpage at our project website
+    * All output maps can be viewed in a single webpage at our [project website](https://lilianhj.github.io/polling-closures/maps/index.html)
 2. Visualization with line plots and barplots:
     * summary_stats_and_vis.py
