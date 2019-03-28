@@ -50,7 +50,8 @@ def df_creation(input_yr):
                            "state", "county_total_x": "total_popn"}, inplace=True)
     big_df.iloc[random.randint(0, 3221)]
     suffix = '_' + input_yr
-    big_df.columns = [col + suffix if col not in ['NAME', 'fips', 'county', 'state'] else col for col in big_df.columns]
+    big_df.columns = [col + suffix if col not in ['NAME', 'fips', 'county', 'state'] 
+                      else col for col in big_df.columns]
     print(big_df.columns)
     # Once completed, we write the dataframe to a csv.
     filename = "all_demographics_" + input_yr + ".csv"
@@ -63,6 +64,8 @@ df_2012 = df_creation("2012")
 df_2016 = df_creation("2016")
 
 final_df = reduce(lambda x, y: pd.merge(x, y, on='fips'), [df_2010, df_2012, df_2016])
-final_df.drop(columns=['NAME_y', 'county_y', 'state_y', 'NAME', 'county', 'state'], inplace=True)
-final_df.rename(columns={"NAME_x": "NAME", "county_x": "county", "state_x": "state"}, inplace=True)
+final_df.drop(columns=['NAME_y', 'county_y', 'state_y', 'NAME', 'county', 'state'], 
+              inplace=True)
+final_df.rename(columns={"NAME_x": "NAME", "county_x": "county", "state_x": "state"}, 
+                inplace=True)
 final_df.to_csv("all_demographics_2010-2016.csv", index=False)
