@@ -7,7 +7,7 @@ The writeup of our process and findings can be viewed at our [project website](h
 ## Team members:
 * [Lilian Huang](https://github.com/lilianhj/)
 * Peter Li
-* Kyle Schindl
+* [Kyle Schindl](https://github.com/kyleschindl)
           
 ## Requirements:
 ### In Python:
