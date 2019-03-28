@@ -1,4 +1,5 @@
 Project examining geographic and demographic trends in closure of polling locations across the United States.
+
 Done as a final project for the UChicago CS 122 class in Winter 2019.
 
 ## Team members:
