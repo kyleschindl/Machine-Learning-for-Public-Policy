@@ -11,6 +11,8 @@ The writeup of our process and findings can be viewed at our [project website](h
           
 ## Requirements:
 ### In Python:
+* Census
+* us
 * folium (0.2.1)
 * pandas 
 * seaborn
