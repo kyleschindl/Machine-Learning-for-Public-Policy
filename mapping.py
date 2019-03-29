@@ -163,6 +163,6 @@ make_map(["provisional/voters_2008", "provisional/voters_2012",
          [0, 0.2, 0.4, 0.6, 0.8, 5])
 
 '''
-All of the created maps can be viewed in a single file at our project website,
+All of the created maps can be viewed in a single page at our project website,
 linked in our README.
 '''
