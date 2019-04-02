@@ -6,7 +6,7 @@ The writeup of our process and findings can be viewed at our [project website](h
 
 ## Team members:
 * [Lilian Huang](https://github.com/lilianhj/)
-* Peter Li
+* [Peter Li](https://github.com/jizhao94)
 * [Kyle Schindl](https://github.com/kyleschindl)
           
 ## Requirements:
