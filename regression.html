@@ -1,0 +1,127 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #003366;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 250px;
+  font-size: 20px;
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="sidenav">
+  <a href="index.html">Polling Closures</a>
+  <p> </p>
+  <p> </p>
+  <a href="charts/index.html">Charts</a>
+  <a href="regression.html">Regression</a>
+  <a href="maps/index.html">Maps</a>
+  <a href="contact.html">Contact Us</a>
+</div>
+
+<div class="main">
+  <h2>Regression output</h2>
+<table align="center" style="text-align:center"><tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"></td><td><em>Dependent variable:</em></td></tr>
+<tr><td></td><td colspan="1" style="border-bottom: 1px solid black"></td></tr>
+<tr><td style="text-align:left"></td><td>polling_locations</td></tr>
+<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">black_alone</td><td>-0.092</td></tr>
+<tr><td style="text-align:left"></td><td>(0.064)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">hispanic</td><td>-0.289<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.054)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">asian_alone</td><td>-0.505</td></tr>
+<tr><td style="text-align:left"></td><td>(0.344)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">median_income</td><td>-0.001<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.0001)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">democrat</td><td>-0.205<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.060)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">factor(clean_region)Northeast</td><td>3.409</td></tr>
+<tr><td style="text-align:left"></td><td>(2.763)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">factor(clean_region)South</td><td>-1.864</td></tr>
+<tr><td style="text-align:left"></td><td>(1.826)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">factor(clean_region)West</td><td>0.528</td></tr>
+<tr><td style="text-align:left"></td><td>(2.199)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">factor(year)2012</td><td>-1.719</td></tr>
+<tr><td style="text-align:left"></td><td>(1.584)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">factor(year)2016</td><td>-4.098<sup>**</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(1.707)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">total_popn</td><td>0.0003<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(0.00000)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td style="text-align:left">Constant</td><td>42.497<sup>***</sup></td></tr>
+<tr><td style="text-align:left"></td><td>(3.890)</td></tr>
+<tr><td style="text-align:left"></td><td></td></tr>
+<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left">Observations</td><td>9,332</td></tr>
+<tr><td style="text-align:left">R<sup>2</sup></td><td>0.705</td></tr>
+<tr><td style="text-align:left">Adjusted R<sup>2</sup></td><td>0.704</td></tr>
+<tr><td style="text-align:left">Residual Std. Error</td><td>61.914 (df = 9320)</td></tr>
+<tr><td style="text-align:left">F Statistic</td><td>2,023.346<sup>***</sup> (df = 11; 9320)</td></tr>
+<tr><td colspan="2" style="border-bottom: 1px solid black"></td></tr><tr><td style="text-align:left"><em>Note:</em></td><td style="text-align:right"><sup>*</sup>p<0.1; <sup>**</sup>p<0.05; <sup>***</sup>p<0.01</td></tr>
+</table>
+
+<p>We begin to investigate the change in the number of polling locations in a geographic region (e.g. “Midwest”, “South”, etc.) over time by building a fixed effects model. Importantly, a fixed effects model lets us estimate variables that do not change across time and geographic region.</p>
+
+<p>Our independent variables are: the proportions of the population that are Black, Hispanic, and Asian; the median income, proportion of votes that went to the Democratic presidential candidate in a given election, and the total population. We are using total population mainly as a control variable, as there is a positive correlation between total population and other variables such as Democratic vote share.</p>
+
+<h3>Findings</h3>
+<p>We find a statistically significant negative relationship between number of polling stations and the Hispanic population, Democratic vote share, and median income. We also find that there was a significant decrease in number of polling stations between 2012 and 2016. Total population has a significant positive relationship with number of polling stations, as expected. Interestingly, there was no significant relationship between geographic region and change in number of polling locations. This may indicate that temporal-based changes which occurred across every region were more significant than region-based changes.</p>
+
+</div>
+   
+</body>
+</html> 
