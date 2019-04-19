@@ -1,0 +1,132 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #003366;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 250px;
+  font-size: 20px;
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="sidenav">
+  <a href="../index.html">Polling Closures</a>
+  <p> </p>
+  <p> </p>
+  <a href="../charts/index.html">Charts</a>
+  <a href="../regression.html">Regression</a>
+  <a href="maps/index.html">Maps</a>
+  <a href="../contact.html">Contact Us</a>
+</div>
+
+<div class="main">
+<h2>Demographics</h2>
+
+<h3>Black population</h3>
+<p>This map shows the percentage of each county's population that is black.</p>
+<iframe src="black_map.html" style="border: 0; width:100%; height:600px;"></iframe>
+
+<h3>Hispanic population</h3>
+<p>This map shows the percentage of each county's population that is Hispanic.</p>
+<iframe src="hispanic_map.html" style="border: 0; width:100%; height:600px;"></iframe>
+
+<h3>Median household income</h3>
+<p>This map shows the median household income in each county.</p>
+<iframe src="income_map.html" style="border: 0; width:100%; height:600px;"></iframe>
+
+<h3>Median age</h3>
+<p>This map shows the median age in each county.</p>
+<iframe src="age_map.html" style="border: 0; width:100%; height:600px;"></iframe>
+
+<h2>Democratic vote share, 2008-2016</h3>
+<p>This map shows the percentage of each county's vote that went to the Democratic candidate.
+You can toggle layers on and off to see the data for different years. 
+2008 is the first layer in the list of options, 2016 the last.</p>
+<iframe src="democrat.html" style="border: 0; width:100%; height:600px;"></iframe>
+
+<h2>Polling locations</h2>
+
+<h3>Percentage change in number of polling locations</h3>
+<p>This map shows the percentage change in a county's number of polling locations over 4-year time periods.
+You can toggle layers on and off to see the data for different periods.
+The first layer in the list shows the 2008-2012 change, the next 2012-2016, the last the total 2008-2016 change.</p>
+<iframe src="polling.html" style="border: 0; width:100%; height:600px;"></iframe>
+
+
+<h3>Number of voters per polling location</h3>
+<p>This map shows the number of voters per polling station in a county.
+You can toggle layers on and off to see the data for different years. 
+2008 is the first layer in the list of options, 2016 the last.</p>
+<iframe src="voters.html" style="border: 0; width:100%; height:600px;"></iframe>
+
+<h3>Number of polling workers per polling location</h3>
+<p>This map shows the number of polling workers per polling station in a county.
+You can toggle layers on and off to see the data for different years. 
+2008 is the first layer in the list of options, 2016 the last.</p>
+<iframe src="workers.html" style="border: 0; width:100%; height:600px;"></iframe>
+
+<h2>Provisional votes</h2>
+
+<h3>Percentage of provisional votes counted</h3>
+<p>This map shows the percentage of provisional votes that were counted in a county.
+You can toggle layers on and off to see the data for different years. 
+2008 is the first layer in the list of options, 2016 the last.</p>
+<iframe src="provisional.html" style="border: 0; width:100%; height:600px;"></iframe>
+
+<h3>Percentage of voters who cast provisional votes</h3>
+<p>This map shows the percentage of voters who cast provisional votes in a county.
+You can toggle layers on and off to see the data for different years. 
+2008 is the first layer in the list of options, 2016 the last.</p>
+<p>We include the ratio of provisional ballots to total ballots cast as a potential proxy for potential impediments to voting. Voters typically cast provisional ballots when they feel they are entitled to vote but are denied due to errors surrounding their eligibility.</p>
+<iframe src="prov_voters.html" style="border: 0; width:100%; height:600px;"></iframe>
+
+</div>
+   
+</body>
+</html> 

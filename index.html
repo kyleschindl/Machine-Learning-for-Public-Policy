@@ -1,0 +1,89 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #003366;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 250px;
+  font-size: 20px;
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="sidenav">
+  <a href="index.html">Polling Closures</a>
+  <p> </p>
+  <p> </p>
+  <a href="charts/index.html">Charts</a>
+  <a href="regression.html">Regression</a>
+  <a href="maps/index.html">Maps</a>
+  <a href="contact.html">Contact Us</a>
+</div>
+
+<div class="main">
+  <h2>Introduction</h2>
+  <p>The aim of this project was to visualize the change in the number of polling locations in counties across the United States, and to visualize it alongside other information about a county: its demographics, its tendency to vote Democratic or Republican, etc. We hoped to discover if there is any systematic correlation between these variables and the change in the number of polling stations, and if these differ by geographical region.</p>
+
+  <h2>Methodology</h2>
+  <p>We drew upon three main data sources: the American Community Survey estimates for demographic data, an MIT Election Data Science Lab dataset on county-level presidential election returns, and the national Election Administration and Voting Survey dataset on county-level polling locations and operations.</p>
+  <p>We made extensive use of various Python libraries. Besides the Census library that allowed us to access the Census API, we also used: Folium for creating maps, Seaborn and Matplotlib for data visualization through charts, Statsmodels for performing regression analysis, and various others for data cleaning, wrangling, and exploratory data analysis, most prominently Pandas and Numpy.</p>
+  <p>Our process involved three main stages:</p>
+  <p>1) The collection of data from the aforementioned sources, cleaning them, and aggregating them into a single merged dataset.</p>
+  <p>2) Initial exploratory analysis - in particular, the use of regressions to identify potentially interesting relationships between variables.</p>
+  <p>3) Creating the final data visualizations to be presented - specifically, line charts to show changes over time, bar graphs to compare variables across different subsets of the data, and maps to visualize geographic variation in characteristics.</p>
+
+  <h2>Findings</h2>
+  You can navigate through our findings using the sidebar. We produced:
+  <p>1) Exploratory charts</p>
+  <p>2) Regression models</p>
+  <p>3) A set of maps</p>
+
+</div>
+   
+</body>
+</html> 

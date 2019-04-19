@@ -1,0 +1,103 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #003366;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 250px;
+  font-size: 20px;
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+figure {
+    display: inline-block;
+    border: 1px dotted gray;
+    margin: 20px;
+}
+figure img {
+    vertical-align: top;
+}
+figure figcaption {
+    border: 1px dotted blue;
+    text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+<div class="sidenav">
+  <a href="../index.html">Polling Closures</a>
+  <p> </p>
+  <p> </p>
+  <a href="index.html">Charts</a>
+  <a href="../regression.html">Regression</a>
+  <a href="../maps/index.html">Maps</a>
+  <a href="../contact.html">Contact Us</a>
+</div>
+
+<div class="main">
+  <h2>Exploratory charts</h2>
+<figure>
+<img src="polling_station_density_variation_by_division.png" style="width:100%">
+<figcaption>Variation in polling station density by Census division</figcaption>
+</figure>
+<p>This line plot shows change in average polling station density (number of voters per polling station) across years by Census division. (We take the natural log for better visualization.)</p>
+<p>We found that the average polling station density increased significantly in the Mountain area from 2012 to 2016, indicating that the ratio of voter population to number of polling stations rose greatly in this area.</p>
+<p>This also corresponds to the decrease of polling stations, which is reflected in both the bar-plots.</p>
+<figure>
+<img src="polling_station_change_by_division_0812.png" style="width:100%">
+<figcaption>Change in number of polling stations by Census division, 2008-2012</figcaption>
+</figure>
+<figure>
+<img src="polling_station_change_by_division_1216.png" style="width:100%">
+<figcaption>Change in number of polling stations by Census division, 2012-2016</figcaption>
+</figure>
+<p>These trends are further corroborated in the <a href="../maps/index.html">maps</a>.</p>
+
+</div>
+   
+</body>
+</html> 
